@@ -8,15 +8,15 @@ public class JdbcAPIPerfTest {
 	
    // HANA JDBC
    static final String HANA_JDBC_DRIVER = "com.sap.db.jdbc.Driver";  
-   static final String HANA_DB_URL = "jdbc:sap://10.58.136.174:30015?reconnect=true";
+   static final String HANA_DB_URL = "jdbc:sap://hanaserver:30015?reconnect=true";
    static final String HANA_USER = "SYSTEM";
-   static final String HANA_PASSWORD = "manager";
+   static final String HANA_PASSWORD = "xxxx";
    
    //MSSQL JDBC
    static final String MSSQL_JDBC_DRIVER = "com.microsoft.sqlserver.jdbc.SQLServerDriver";  
-   static final String MSSQL_DB_URL = "jdbc:sqlserver://pvgd50839753a:1433";
+   static final String MSSQL_DB_URL = "jdbc:sqlserver://localhost:1433";
    static final String MSSQL_USER = "sa";
-   static final String MSSQL_PASSWORD = "SAPB1Admin";
+   static final String MSSQL_PASSWORD = "xxxx";
    
    static final String direct_select_sql = "SELECT USERID FROM OUSR WHERE \"USER_CODE\" = 'Workflow'";
    static final String prepare_select_sql = "SELECT USERID FROM OUSR WHERE \"USER_CODE\" = ?";
